@@ -1,0 +1,66 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+.dynamic-bg {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    scroll-padding-top: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Grid Styling - Menampilkan card secara vertikal */
+#portfolio .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom saja */
+    gap: 24px; /* Spasi antar card */
+}
+
+/* Subheader Styling */
+.subheader {
+    display: flex;
+    flex-direction: row; /* Ubah menjadi row untuk membuat elemen berjajar secara horizontal */
+    align-items: center; /* Agar elemen sejajar secara vertikal */
+    justify-content: start; /* Mulai dari kiri */
+    gap: 16px; /* Memberikan jarak antar elemen */
+    margin-bottom: 16px; /* Jarak antar subheader */
+}
+
+.subheader h4 {
+    flex: none; /* Teks tidak boleh berubah ukuran */
+    white-space: nowrap; /* Agar teks tidak memotong menjadi beberapa baris */
+}
+
+.subheader img {
+    flex-shrink: 0; /* Gambar tidak mengecil */
+    width: auto; /* Biarkan lebar menyesuaikan */
+    max-width: 130px; /* Batasi lebar maksimum gambar */
+    height: auto; /* Jaga rasio gambar */
+    border-radius: 8px; /* Tambahkan efek rounded */
+}
+
+/* Deskripsi Styling */
+#portfolio p {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-top: 16px;
+}
+
+.hidden {
+    display: none;
+}
